@@ -1,0 +1,15 @@
+<h1>Olá Handlebars</h1>
+{{#if approved}}
+<p>
+   Voce esta aprovado
+</p>
+{{else}}
+    <p>Voce nao esta aprovado</p>
+{{/if}}
+
+<p>O nome do usuario é {{user.name}} {{user.surname}}</p>
+{{#if auth}}
+ <p>
+    Voce esta autenticado, <a href="/dashboard">avancar</a>
+ </p>
+{{/if}}
